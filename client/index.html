@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FSE Chat Room</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Login/Register Screen -->
+  <div id="login-screen" class="screen">
+    <h1 id = "app-title">FSE Chat Room</h1>
+    <label for="username">Username</label>
+    <input type="text" id="username">
+    <label for="password">Password</label>
+    <input type="password" id="password">
+    <div class="login-button-container">
+      <button id="login-btn">Login</button>
+      <button id="register-btn">Register</button>
+    </div>
+  </div>
+
+  <!-- Chat Room Screen -->
+  <div id="chat-room-screen" class="screen" style="display: none;">
+    <header>
+      <h3>FSE Chat Room</h3>
+      <button id="logout-btn">Logout</button>
+    </header>
+    <div id="messages">
+      <div class="message">
+        <strong>Hakan</strong> <span class="time">08.08.2022 11:00AM</span>
+        <p>Welcome to Foundations of Software Engineering!</p>
+      </div>
+      <div class="message">
+        <strong>Cécile</strong> <span class="time">08.08.2022 3:50PM</span>
+        <p>We look forward to working with you this semester!</p>
+      </div>
+      <div class="message">
+        <strong>Me</strong> <span class="time">08.08.2022 4:20PM</span>
+        <p>See you soon!</p>
+      </div>
+    </div>
+    <div id="new-message">
+      <input type="text" id="message-input">
+    </div>
+    <div id="post"> 
+      <button id="post-btn">Post</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
