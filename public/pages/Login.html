@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FSE Chat Room</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+  <div id="login-screen" class="screen">
+    <h1 id = "app-title">FSE Chat Room</h1>
+    <label for="username">Username</label>
+    <input type="text" id="username">
+    <label for="password">Password</label>
+    <input type="password" id="password">
+    <div class="login-button-container">
+      <button id="login-btn">Login</button>
+      <button id="register-btn">Register</button>
+    </div>
+  </div>
+  <script src="http://localhost:3001/socket.io/socket.io.js"></script>
+  <script src="/public/js/script.js"></script>
+</body>
+</html>
